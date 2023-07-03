@@ -17,11 +17,21 @@ function JokeList() {
         (joke) => <Joke question={joke.question} answer={joke.answer} key={joke.id} />
     );
 
+    //Filtering
+    const jokeComponetsFiltered =
+        jokesData.filter(
+            joke => joke.question == null
+        ).map(
+            (joke) => <Joke question={joke.question} answer={joke.answer} key={joke.id} />
+        );
+
     return (
         <div>
             {jokeComponents}
             <hr />
             {jokeComponetesArrow}
+            <hr />
+            {jokeComponetsFiltered}
         </div>
     );
 }
