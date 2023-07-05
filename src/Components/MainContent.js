@@ -11,6 +11,7 @@ function MainContent(){
             <hr />
             To run code you just need to go to your folder <i><b>npm start</b></i> in terminal. 
             <br />
+            2:07
             <hr />
             <ProductList />
             <hr />
