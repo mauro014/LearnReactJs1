@@ -27,6 +27,7 @@ function JokeList() {
 
     return (
         <div>
+            <h1>Jokes List</h1>
             {jokeComponents}
             <hr />
             {jokeComponetesArrow}

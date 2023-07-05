@@ -2,7 +2,7 @@ import React from "react";
 
 function Header () {
 
-    const date = new Date(2020,6,31,5);
+    const date = new Date();
     const hours = date.getHours();
 
     let timeOfDay;
