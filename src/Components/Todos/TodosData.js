@@ -10,7 +10,7 @@ const todos = [
         completed: false
     },
     {
-        id: "2",
+        id: "3",
         placeHolder: "Wash",
         completed: true
     }
