@@ -7,6 +7,7 @@ import ProductList from "./Products/ProductList";
 import StatePractice from "./StatesPractice/StatePractice";
 import LoggedPractice from "./StatesPractice/LoggedPractice";
 import Counter from "./StatesPractice/Counter";
+import ConditionalLoading from "./ConditionalLoading/ConditionalLoading";
 
 function MainContent(){
     return (
@@ -14,7 +15,9 @@ function MainContent(){
             <hr />
             To run code you just need to go to your folder <i><b>npm start</b></i> in terminal. 
             <br />
-            2:07
+            3:15:31
+            <hr />
+            <ConditionalLoading />
             <hr />
             <Counter />
             <hr />
