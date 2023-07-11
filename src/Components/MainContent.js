@@ -9,6 +9,7 @@ import LoggedPractice from "./StatesPractice/LoggedPractice";
 import Counter from "./StatesPractice/Counter";
 import ConditionalLoading from "./ConditionalLoading/ConditionalLoading";
 import LoggedInOutPractice from "./LoggedUser/LoggedInOutPractice";
+import FetchingSW from "./FetchingSW/FetchingSW";
 
 function MainContent(){
     return (
@@ -17,6 +18,8 @@ function MainContent(){
             To run code you just need to go to your folder <i><b>npm start</b></i> in terminal. 
             <br />
             3:15:31
+            <hr />
+            <FetchingSW />
             <hr />
             <LoggedInOutPractice />
             <hr />
