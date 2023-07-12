@@ -20,7 +20,7 @@ class ConditionalLoading extends React.Component {
                     });
                 }
             )
-        }, 1500
+        }, 2500
         );
     };
 

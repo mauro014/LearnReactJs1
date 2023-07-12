@@ -10,6 +10,7 @@ import Counter from "./StatesPractice/Counter";
 import ConditionalLoading from "./ConditionalLoading/ConditionalLoading";
 import LoggedInOutPractice from "./LoggedUser/LoggedInOutPractice";
 import FetchingSW from "./FetchingSW/FetchingSW";
+import FormsPart1 from "./Forms/FormsPart1";
 
 function MainContent(){
     return (
@@ -17,7 +18,9 @@ function MainContent(){
             <hr />
             To run code you just need to go to your folder <i><b>npm start</b></i> in terminal. 
             <br />
-            3:15:31
+            4:04:27
+            <hr />
+            <FormsPart1 />
             <hr />
             <FetchingSW />
             <hr />
