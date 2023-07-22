@@ -9,11 +9,9 @@ class FormsPart2 extends React.Component {
             age: "",
             gender: "",
             destination: "",
-            dietaryRestrictions: {
-                isVegan: false,
-                isKosher: false,
-                isLactoseFree: false
-            }
+            isVegan: false,
+            isKosher: false,
+            isLactoseFree: false
         }
 
         this.handleChange = this.handleChange.bind(this)
@@ -22,11 +20,9 @@ class FormsPart2 extends React.Component {
     handleChange(event){
         const {name,value, type, checked} = event.target;
         if(type === "checkbox"){
-            // this.setState({
-            //     dietaryRestrictions: {
-            //         [name]: checked
-            //     }
-            // });
+             this.setState({
+                     [name]: checked
+             });
         }
         else{
             this.setState({[name]: value})
@@ -70,6 +66,7 @@ class FormsPart2 extends React.Component {
                             onChange={this.handleChange} /> Female
                     </label>
                     <br />
+                    <br />
                     <select 
                         values={this.state.destination} 
                         name="destination" 
@@ -81,23 +78,24 @@ class FormsPart2 extends React.Component {
                         <option value="south pole">South Pole</option>
                     </select>
                     <br />
+                    <br />
                     <label>
                         <input type="checkbox"
                             name="isVegan"
                             onChange={this.handleChange} 
-                            checked={this.state.dietaryRestrictions.isVegan}
+                            checked={this.state.isVegan}
                             /> Vegan? 
                             <br />
                         <input type="checkbox"
                             name="isKosher"
                             onChange={this.handleChange} 
-                            checked={this.state.dietaryRestrictions.isKosher}
+                            checked={this.state.isKosher}
                             /> Kosher? 
                             <br />
                         <input type="checkbox"
                             name="isLactoseFree"
                             onChange={this.handleChange} 
-                            checked={this.state.dietaryRestrictions.isLactoseFree}
+                            checked={this.state.isLactoseFree}
                             /> Lactose Free? 
                             <br />
                     </label>
@@ -107,6 +105,11 @@ class FormsPart2 extends React.Component {
                     <p>Your Age: {this.state.age}</p>
                     <p>Your Gender: {this.state.gender}</p>
                     <p>Your Destination: {this.state.destination}</p>
+                    <p>Your Dietary Restrictions<br />
+                        Vegan: {this.state.isVegan ? "Yes": "No" }<br />
+                        Kosher: {this.state.isKosher ? "Yes": "No" }<br />
+                        Lactose Free: {this.state.isLactoseFree ? "Yes": "No" }
+                    </p>
                 </form>
             </div>
         )

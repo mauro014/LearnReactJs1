@@ -12,6 +12,7 @@ import LoggedInOutPractice from "./LoggedUser/LoggedInOutPractice";
 import FetchingSW from "./FetchingSW/FetchingSW";
 import FormsPart1 from "./Forms/FormsPart1";
 import FormsPart2 from "./Forms/FormsPart2";
+import FormsPart3 from "./Forms/FormsPart3/FormsPart3";
 
 function MainContent(){
     return (
@@ -20,6 +21,8 @@ function MainContent(){
             To run code you just need to go to your folder <i><b>npm start</b></i> in terminal. 
             <br />
             4:19:50
+            <hr />
+            <FormsPart3 />
             <hr />
             <FormsPart2 />
             <hr />
